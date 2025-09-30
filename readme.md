@@ -1,0 +1,64 @@
+# astroMAITRI – Multimodal AI Companion  
+
+## Project Overview  
+
+**astroMAITRI** is an AI-powered multimodal assistant designed to act as a supportive companion.  
+It can perceive emotions, understand speech, and respond empathetically in real time through three core capabilities:  
+
+1. **Facial Emotion Detection** – Recognizes the user’s current emotion (happy, sad, stressed, neutral, etc.) using **DeepFace** and **OpenCV**.  
+2. **Speech Recognition & Transcription** – Listens and transcribes user speech in real-time using **Vosk** (offline automatic speech recognition).  
+3. **Conversational Empathy** – Generates supportive or context-aware responses using **HuggingFace Transformers**.  
+
+The assistant is designed to serve as a **mental wellness and productivity partner**, functioning as a compassionate AI companion.  
+
+---
+
+## Tech Stack  
+
+- **Programming Language**: Python 3.11+  
+- **Framework**: Streamlit – for building the interactive web interface  
+- **DeepFace** – facial emotion recognition from video frames  
+- **OpenCV** – camera access and image processing  
+- **Vosk** – offline real-time speech-to-text processing  
+- **Transformers (HuggingFace)** – AI-driven conversational response generation  
+- **Sounddevice** – microphone audio capture  
+- **TensorFlow / tf-keras** – backend ML operations for DeepFace models  
+
+---
+
+## How It Works  
+
+1. **Application Start**  
+   - Run the app using Streamlit.  
+   - The system activates both the camera and microphone.  
+
+2. **Emotion Recognition**  
+   - The webcam feed is processed through DeepFace.  
+   - User facial expressions are analyzed to identify emotions (happy, sad, neutral, etc.).  
+
+3. **Speech Transcription**  
+   - Vosk captures audio input.  
+   - Speech is converted into text in real time.  
+
+4. **Empathetic Response Generation**  
+   - The transcribed text and detected emotion are passed to a HuggingFace model.  
+   - The model generates an empathetic response tailored to the user’s state.  
+
+5. **Result Display**  
+   - The Streamlit UI shows:  
+     - Detected emotion  
+     - Transcribed speech  
+     - AI-generated empathetic response  
+
+---
+
+## Installation  
+
+Install the required dependencies:  
+
+```pip install streamlit opencv-python sounddevice vosk deepface pillow```
+
+## To Run
+```bash
+python -m streamlit run app2.py
+
