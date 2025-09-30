@@ -1,0 +1,5 @@
+First install the dependencies:
+pip install streamlit opencv-python sounddevice vosk deepface pillow
+
+To run :
+python -m streamlit run app2.py

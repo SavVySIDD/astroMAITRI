@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+venv/
+alerts_log.txt
+vosk-model-small-en-us-0.15/
